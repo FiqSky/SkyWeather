@@ -1,4 +1,4 @@
-package com.fiqsky.skyweather
+package com.fiqsky.skyweather.utils
 
 /**
 author Fiqih
