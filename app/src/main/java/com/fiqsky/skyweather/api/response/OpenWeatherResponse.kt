@@ -1,13 +1,13 @@
-package com.fiqsky.skyweather
+package com.fiqsky.skyweather.api.response
 
 /**
 author Fiqih
 Copyright 2023, FiqSky Project
  **/
-data class WeatherResponse(
+data class OpenWeatherResponse(
     val main: Main,
     val weather: List<Weather>,
-    val wind: Wind
+    val wind: OpenWeatherWind
 )
 
 data class Main(
@@ -19,6 +19,6 @@ data class Weather(
     val description: String
 )
 
-data class Wind(
+data class OpenWeatherWind(
     val speed: Double
 )

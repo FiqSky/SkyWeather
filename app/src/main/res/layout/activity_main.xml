@@ -9,23 +9,23 @@
         android:id="@+id/textViewTemperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Temperature" />
+        android:text="@string/temperature" />
 
     <TextView
         android:id="@+id/textViewDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description" />
+        android:text="@string/description" />
 
     <TextView
         android:id="@+id/textViewHumidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Humidity" />
+        android:text="@string/humidity" />
 
     <TextView
         android:id="@+id/textViewWindSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wind Speed" />
+        android:text="@string/wind_speed" />
 </LinearLayout>
