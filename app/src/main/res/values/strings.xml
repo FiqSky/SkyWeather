@@ -4,4 +4,8 @@
     <string name="description">Description</string>
     <string name="humidity">Humidity</string>
     <string name="wind_speed">Wind Speed</string>
+    <string name="temperature_icon">Temperature Icon</string>
+    <string name="description_icon">Description Icon</string>
+    <string name="humidity_icon">Humidity Icon</string>
+    <string name="wind_speed_icon">Wind Speed Icon</string>
 </resources>
