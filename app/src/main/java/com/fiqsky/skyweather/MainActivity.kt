@@ -21,8 +21,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Jika tidak diperlukan, hapus fungsi enableEdgeToEdge()
-        // enableEdgeToEdge()
 
         setContentView(R.layout.activity_main)
 
@@ -49,10 +47,10 @@ class MainActivity : AppCompatActivity() {
 
                 // Tampilkan di UI (Main Thread)
                 withContext(Dispatchers.Main) {
-                    textViewTemperature.text = "Suhu: ${mostLikelyWeather.temperature}°C"
-                    textViewDescription.text = "Deskripsi: ${mostLikelyWeather.description}"
-                    textViewHumidity.text = "Kelembaban: ${mostLikelyWeather.humidity}%"
-                    textViewWindSpeed.text = "Kecepatan Angin: ${mostLikelyWeather.windSpeed} m/s"
+                    textViewTemperature.text = "${mostLikelyWeather.temperature}°C"
+                    textViewDescription.text = mostLikelyWeather.description
+                    textViewHumidity.text = "${mostLikelyWeather.humidity}%"
+                    textViewWindSpeed.text = "${mostLikelyWeather.windSpeed} m/s"
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
